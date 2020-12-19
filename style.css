@@ -1,0 +1,8 @@
+.btn-lg{
+    width: 100%;
+}
+
+#ultask li.done{
+    text-decoration: line-through;
+    color: grey;
+}
