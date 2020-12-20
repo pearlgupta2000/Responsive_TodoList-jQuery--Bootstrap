@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-#ultask li.done{
+#ultask .done{
     text-decoration: line-through;
     color: grey;
 }
