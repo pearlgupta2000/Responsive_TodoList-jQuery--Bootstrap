@@ -1,7 +1,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,48 +19,50 @@
 
         <div class="row"> 
             <div class="col-md-7">
-                    <div class="form-group">
-                    <label for="inTask">New Task</label>
-                    <input type="text" class="form-control" id="inTask" aria-describedby="TodoHelp" placeholder="Enter New Task" />
-                    <small id="TodoHelp" class="form-text text-muted">Short Description of your task.</small>
+                <div class="row">
+                    <div class="form-group col-md-11">
+                        <label for="inTask"><b>New Task</b></label>
+                        <input type="text" class="form-control" id="inTask" aria-describedby="TodoHelp" placeholder="Enter New Task" />
+                        <small id="TodoHelp" class="form-text text-muted">Heading of your task.</small>
                     </div>
+                    <div class="w-100"></div>
+                    <div class="form-group col-md-10">
+                        <label for="inTaskDes"><b>Task Description</b></label>
+                        <input type="text" class="form-control" id="inTaskDes" aria-describedby="inputGroup-sizing-lg" placeholder="Enter Task Description" />
+                        <small id="TodoHelp" class="form-text text-muted">Short Description of your task.</small>
+                    </div>
+                </div>
             </div>
 
             <div class="col-md-5">
                 
                 <div class="row">
                     <div class="col-6 col-sm-3 col-md-6 p-1">
-                        <button class="btn btn-danger btn-lg" id="add" disabled>
+                        <button class="btn btn-danger btn-lg shadow-sm" id="add" disabled>
                             <i class="fas fa-plus-square"></i>ADD
                         </button>
                     </div>
                     <div class="col-6 col-sm-3 col-md-6 p-1">
-                        <button class="btn btn-warning btn-lg" id="reset" disabled>
+                        <button class="btn btn-warning btn-lg shadow-sm" id="reset" disabled>
                             <i class="fas fa-backspace"></i>RESET
                         </button>
                     </div>
-                
-                    <!-- Force next columns to break to new line -->
-                    <!-- <div class="w-100"></div> -->
-                
                     <div class="col-6 col-sm-3 col-md-6 p-1">
-                        <button class="btn btn-info btn-lg" id="sort" disabled>
+                        <button class="btn btn-info btn-lg shadow-sm" id="sort" disabled>
                             <i class="fas fa-sort-amount-down"></i>SORT
                         </button>
                     </div>
                     <div class="col-6 col-sm-3 col-md-6 p-1">
-                        <button class="btn btn-success btn-lg" id="cleanup" disabled>
+                        <button class="btn btn-success btn-lg shadow-sm" id="cleanup" disabled>
                             <i class="fas fa-trash-alt"></i>CLEANUP
                         </button>
                     </div>
                 </div>
 
             </div>            
-
         </div>
-
-        <ul class="list-group" id="ulTask">
-        </ul>
+        <div class="list-group" id="ulTask">
+        </div>
     </div>
 </body>
 </html>
